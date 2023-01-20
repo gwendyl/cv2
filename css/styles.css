@@ -1,0 +1,155 @@
+/* colors
+https://colorhunt.co/
+Header Text: E38B29
+Other Text: F1A661
+Background: FDEEDC
+Extras: FFD8A9
+
+Font usage stats
+https://www.cssfontstack.com/
+
+free fonts to embed
+https://fonts.google.com/
+
+flaticon.com
+
+giphy.com
+*/
+/* ********************
+Notes on positioning
+***********************
+Block elements take the whole width of the page.
+
+Positions
+    static - follow default html flow rules
+    relative - move it relative to its static position;  
+                Other elements on the screen will behave as if
+                this item still exists in its static position. 
+    absolute - absolute position within its parent (div or body);
+               Effectively erases it from the flow of the document so 
+               other elements will behave as if it does not exist
+    fixed
+
+text-align  - centers anything in container that doesn't have a width set
+block items that do have a width set neet to use margin auto
+margin auto
+
+to take an object out of the "flow" of the other objects, 
+set its' position to absolute
+*********************** */
+
+body {
+    margin: 0px;
+    text-align: center;
+    background-color: #FDEEDC;
+    font-family: 'Raleway', sans-serif;
+}
+hr {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top:10px dotted;
+    border-color: #F1A661;
+    width: 20%;
+}
+h1{
+    margin: 100px auto 0 auto;
+    font-family: Sacramento, cursive;
+    font-size: 5.675rem;
+    color: #E38B29;
+}
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color: #E38B29;
+    font-weight: normal;
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    color: #F1A661;
+}
+a{
+    color: #F1A661;
+}
+div{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.middle-container{
+    background-color: whitesmoke;
+}
+.topCloud {
+    position: relative;
+    left: 200px;
+    top: 10px;
+}
+
+.bottomCloud {
+    position:absolute;
+    top: 100px;
+}
+.circleImage{
+    border-radius: 50%;
+    width: 150px;
+}
+.skillsImageLeft{
+    /* float is very overused.  Use only for wrapping text
+     * do not use for item positioning
+     */
+    float: left;
+    margin: auto 10px auto auto;
+}
+.skillsImageRight{
+    float: right;
+    margin: auto 10px auto auto;
+}
+.skill-row{
+    width: 50%;
+    margin: auto;
+    padding-top: 75px;
+    text-align: left;
+    line-height: 200%;
+}
+.dalle {
+    margin-top: 0;
+    width: 40%;
+    margin: 0 auto auto auto;
+}
+/*
+.pLeft{
+    clear:left;
+}
+.pRight{
+clear:right;
+}
+*/
+
+.btn {
+    display: block;
+    width: 150px;
+    margin: auto;
+    background: #E38B29;
+    background-image: -webkit-linear-gradient(top, #E38B29, #FFD8A9);
+    background-image: -moz-linear-gradient(top, #E38B29, #FFD8A9);
+    background-image: -ms-linear-gradient(top, #E38B29, #FFD8A9);
+    background-image: -o-linear-gradient(top, #E38B29, #FFD8A9);
+    background-image: linear-gradient(to bottom, #E38B29, #FFD8A9);
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 13px;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .btn:hover {
+    background: #FFD8A9;
+    text-decoration: none;
+  }
+  .socials{
+    width: 30px;
+    height: 30px;
+  }
